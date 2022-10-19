@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    overflow: hidden;
+}
+
+body {
+    margin: 0%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    font-size: 10px;
+
+}
+
+
+input::placeholder {
+    font-family: 'Montserrat';
+    color: rgb(117, 112, 112);
+    /*color: white;*/
+
+}
+
+/*---------------------LADO IZQUIERDO--------------------------------*/
+
+.imagenFondo {
+    background-image: url("./bg-main-desktop.png");
+    background-repeat: none;
+    background-size: cover;
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+}
+
+
+.front {
+    background-image: url("bg-card-front.png");
+    position: absolute;
+    border-radius: 8px;
+    width: 350px;
+    height: 180px;
+    top: 20%;
+    left: 15%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.back {
+    background-image: url("bg-card-back.png");
+    position: absolute;
+    border-radius: 8px;
+    width: 328px;
+    height: 180px;
+    top: 55%;
+    left: 20%;
+    background-repeat: no-repeat
+        /*----> ESTO ES PARA QUE LA IMAGEN NO SE AUTO-REPLIQUE*/
+    ;
+    background-size: contain
+        /*----> ESTO ES PARA QUE LA IMAGEN SE ADAPTE AL TAMAÑO DEL CONTENEDOR*/
+    ;
+    box-shadow: 3px 15px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.inputBack {
+    position: absolute;
+    top: 45%;
+    left: 75%;
+    width: 30px;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    color: white;
+
+
+
+}
+
+.inputFront-numero {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    background-color: transparent;
+    margin: 0;
+    border: 0;
+}
+
+.inputFront-nombre {
+    position: absolute;
+    top: 80%;
+    left: 8%;
+    background-color: transparent;
+    margin: 0;
+    border: 0;
+    font-size: 10px;
+    width: 200px;
+
+}
+
+.inputFront-vencimiento {
+    position: absolute;
+    top: 80%;
+    left: 75%;
+    font-size: 10px;
+    width: 50px;
+    background-color: transparent;
+    margin: 0;
+    border: 0;
+}
+
+.logoTarjeta {
+    background-image: url("bg-logo-tarjeta.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 100px;
+    height: 50px;
+
+}
+
+/*---------------------LADO DERECHO--------------------------------*/
+
+.ladoDer {
+    /*justify-content: right;
+    text-align: left;
+    display: inline-block;
+    margin-right: 100px;
+    margin-top: 200px;
+    white-space: nowrap;
+    width: 400px;
+    height: 300px;
+    background-color: green;*/
+    width: 70vw;
+    position: relative;
+
+
+}
+
+.formulario {
+    /*background-color: red;*/
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+}
+
+.vencimiento {
+    /*background-color: aqua;*/
+    display: flex;
+    text-align: justify;
+    margin: 0%;
+    justify-items: center;
+
+}
+
+.datosTarjeta,
+.codigoSeguridad {
+
+    margin: 0%;
+}
+
+.casillero {
+    border-radius: 8px;
+    width: 250px;
+    height: 30px;
+}
+
+.mesAño {
+    border-radius: 8px;
+    width: 60px;
+    height: 30px;
+    border-color: hsl(270, 3%, 87%);
+    border-image: none;
+    box-shadow: none;
+
+
+
+
+}
+
+.numeroCodigo {
+    border-radius: 8px;
+    width: 90px;
+    height: 30px;
+    margin-left: 20px;
+
+}
+
+.codigo {
+    margin-left: 22px;
+}
+
+
+
+.confirmar {
+    font-family: 'Montserrat';
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    width: 257px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    border-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.confirmar:hover {
+    filter: brightness(80%);
+    transition: filter .25s;
+}
+
+.confirmar:active {
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+
+@media (max-width: 600px) {
+    .ladoDer, .imagenFondo {
+        width: 100vw;
+    }
+    .imagenFondo {
+        height: 20vh;
+    }
+    .container {
+    flex-direction: column;    
+
+    }
+}
+
