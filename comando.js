@@ -1,8 +1,11 @@
-const nombre = document.getElementById("nombre")
-const nombreInput = document.getElementById("nombreInput")
+const cvcForm = document.getElementById("cvcForm")
+const cvcBack = document.getElementById("cvcBack")
 
-function duplicar () {
 
-    nombre.value = nombreInput.value
-    console.log(nombre.value)
+const formulario = document.querySelector('formulario');
+
+function igualar() {
+    document.getElementById("cvcForm").value =  document.getElementById("cvcBack").value
 }
+
+console.log(cvcBack)
