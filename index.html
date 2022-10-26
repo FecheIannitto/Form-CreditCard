@@ -19,7 +19,7 @@
 
                 <span id="numeroInput" class="inputFront-numero">0000 0000 0000 0000</span>
                 <span class="inputFront-nombre">JUAN CALOS PEREZ</span>
-                <span class="inputFront-vencimiento">00/00</span>
+                <span class="inputFront-vencimiento"> <span>00</span> / <span>00</span></span>
 
                 <div class="logoTarjeta">
 
@@ -29,7 +29,7 @@
         </div>
 
         <div class="back">
-            <span id="cvcBack" class="inputBack" onkeyup="igualar()">000</span>
+            <span id="cvcBack" class="inputBack">000</span>
         </div>
 
     </div>
@@ -37,7 +37,7 @@
     <!--------------------------- LADO DERECHO------------------------->
 
 
-    <form class="ladoDer" action="#">
+    <form class="ladoDer">
 
         <div class="formulario">
 
@@ -51,13 +51,13 @@
             <div class="vencimiento">
                 <div class="datosTarjeta">
                     <p><strong>Fecha Venc. (MM/YY)</strong></p>
-                    <input type="text" class="mesAño" maxlength="2" placeholder="MM">
-                    <input type="text" class="mesAño año" maxlength="2" placeholder="YY">
+                    <input type="text" class="mesAño" maxlength="2" placeholder="MM" id="mes">
+                    <input type="text" class="mesAño año" maxlength="2" placeholder="YY" id="año">
                 </div>
 
                 <div class="codigoSeguridad">
-                    <p ><strong class="codigo">CVC</strong></p>
-                    <input id="cvcForm" type="text" maxlength="3" class="numeroCodigo" placeholder="Ej.: 123">
+                    <p><strong class="codigo">CVC</strong></p>
+                    <input id="cvcInput" type="text" maxlength="3" class="numeroCodigo" placeholder="Ej.: 123">
                 </div>
             </div>
 
