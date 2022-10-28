@@ -65,17 +65,16 @@ input::placeholder {
 
 }
 
-
-
 .inputBack {
     position: absolute;
-    top: 45%;
-    left: 80%;
+    top: 44%;
+    left: 78%;
     width: 30px;
     margin: 0;
     border: 0;
     background-color: transparent;
     color: white;
+    font-size: 13px;
 
 
 
@@ -235,6 +234,10 @@ input::placeholder {
 .confirmar:active {
     box-shadow: 0 3px #666;
     transform: translateY(4px);
+}
+
+.imagenConfirmar {
+    background-image: url("icon-complete.svg");
 }
 
 /*--------------------VERSION MOBILE---------------------*/
