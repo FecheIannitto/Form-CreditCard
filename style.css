@@ -45,7 +45,8 @@ input::placeholder {
     left: 15%;
     background-repeat: no-repeat;
     background-size: contain;
-}
+    
+} 
 
 .back {
     background-image: url("bg-card-back.png");
@@ -128,6 +129,8 @@ input::placeholder {
     height: 30px;
 
 }
+
+
 
 /*---------------------LADO DERECHO--------------------------------*/
 

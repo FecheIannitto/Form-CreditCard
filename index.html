@@ -8,18 +8,18 @@
 
 <body>
 
+    <!--------------------------- LADO IZQUIERDO------------------------->
+
     <div class="container">
 
-        <!--------------------------- LADO IZQUIERDO------------------------->
-
         <div class="imagenFondo">
-
 
             <div class="front">
 
                 <span id="numeroFront" class="inputFront-numero">0000 0000 0000 0000</span>
                 <span id="nombreFront" class="inputFront-nombre">JUAN CALOS PEREZ</span>
-                <span class="inputFront-vencimiento"> <span>00</span> / <span>00</span></span> <!--no tiene "id" porque se buscó todo el span con el QuerrySelector-->
+                <span class="inputFront-vencimiento"> <span>00</span> / <span>00</span></span>
+                <!--no tiene "id" porque se buscó todo el span con el QuerrySelector-->
 
                 <div class="logoTarjeta">
 
@@ -36,12 +36,11 @@
 
     <!--------------------------- LADO DERECHO------------------------->
 
+    <div id="ladoDer" class="ladoDer">
 
-    <form class="ladoDer">
+        <form class="formulario" id="nene" >
 
-        <div class="formulario">
-
-            <p class="nombre" ><strong>Nombre Completo</strong></p>
+            <p class="nombre"><strong>Nombre Completo</strong></p>
             <input id="nombre" type="text" class="casillero" placeholder="Ej.: Juan Perez">
 
 
@@ -64,13 +63,18 @@
             <button class="confirmar">Confirmar</button>
 
 
+        </form>
+
+        <div class="formulario" style="display: none;" id="gracias">
+            <img src="icon-complete.svg" alt="check">
+            <h1>Gracias!</h1>
+            <p>Pudimos agregar los detalles de tu tarjeta</p>
+            <button class="confirmar">Continuar</button>
         </div>
 
-
-
-    </form>
     </div>
     <script src="comando.js"></script>
+
 </body>
 
 </html>
