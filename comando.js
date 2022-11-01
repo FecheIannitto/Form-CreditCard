@@ -18,6 +18,56 @@ nombre.addEventListener("input", (event) => {
 
 
 numero.addEventListener("input", (event) => {
+    const OBJ_ZEROS = {
+        1: '000 0000 0000 0000',
+        2: '00 0000 0000 0000',
+        3: '0 0000 0000 0000',
+        4: ' 0000 0000 0000',
+        5: '000 0000 0000',
+        6: '00 0000 0000',
+        7: '0 0000 0000',
+        8: ' 0000 0000',
+        9: '000 0000',
+        10: '00 0000',
+        11: '0 0000',
+        12: ' 0000',
+        13: '000',
+        14: '00',
+        15: '0',
+        16: '',
+    }
+
+    function formatNumber(numero) {
+        if ([1, 2, 3, 4].includes(numero.length)) {
+            return numero + OBJ_ZEROS[numero.length]
+        }
+        if ([5, 6, 7, 8].includes(num.length)) {
+            return num.substring(0, 4) + ' ' + num.substring(4, num.length) + OBJ_ZEROS[num.length]
+        }
+        if ([9, 10, 11, 12].includes(num.length)) {
+            return num.substring(0, 4) + ' ' + num.substring(4, 8) + ' ' + num.substring(8, num.length) + OBJ_ZEROS[num.length]
+        }
+        if ([12, 13, 14, 16].includes(num.length)) {
+            return num.substring(0, 4) + ' ' + num.substring(4, 8) + ' ' + num.substring(8, 12) + ' ' + num.substring(12, num.length) + OBJ_ZEROS[num.length]
+        }
+        numero.substring(0, 4) + ' ' + numero.substring(4, 8) + ' ' + num.substring(8, 12) + ' ' + num.substring(12, 16)
+    }
+
+
+    function formatNumber(numero) {
+        if ([1, 2, 3, 4].includes(numero.length)) {
+            return numero + OBJ_ZEROS[numero.length]
+        }
+        if ([5, 6, 7, 8].includes(num.length)) {
+            return num.substring(0, 4) + ' ' + num.substring(4, num.length) + OBJ_ZEROS[num.length]
+        }
+        if ([9, 10, 11, 12].includes(num.length)) {
+            return num.substring(0, 4) + ' ' + num.substring(4, 8) + ' ' + num.substring(8, num.length) + OBJ_ZEROS[num.length]
+        }
+        return numero.substring(0, 4) + ' ' + numero.substring(4, 8) + ' ' + num.substring(8, 12) + ' ' + num.substring(12, num.length) + OBJ_ZEROS[num.length]
+    }
+
+
     numeroFront.textContent = event.target.value
 })
 
@@ -46,11 +96,11 @@ ladoDer.addEventListener("submit", (e) => {
     } else {
 
         //OPCION 3
-        
+
         const gracias = document.getElementById("gracias")
         const nene = document.getElementById("nene")
 
-        nene.style = "display: none;"        
+        nene.style = "display: none;"
         gracias.style = "text-align: center;"
 
 
